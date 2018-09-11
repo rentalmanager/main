@@ -60,7 +60,7 @@ class MainServiceProvider extends ServiceProvider
         // Publish the config files
         $this->publishes([
             __DIR__.'/../config/rentalmanager.php' => config_path('rentalmanager.php')
-        ], 'base');
+        ], 'rentalmanager');
 
         $this->loadMigrationsFrom(__DIR__.'/../migrations');
     }
