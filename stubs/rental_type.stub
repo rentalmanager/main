@@ -1,0 +1,15 @@
+<?php
+namespace DummyNamespace;
+
+use RentalManager\Main\Models\RMRentalType;
+
+class DummyClass extends RMRentalType
+{
+     //
+     protected $fillable = [
+        'name',
+        'slug'
+     ];
+
+    public $timestamps = false;
+}

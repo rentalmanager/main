@@ -1,0 +1,25 @@
+<?php
+namespace DummyNamespace;
+
+use RentalManager\Main\Models\RMLocation;
+
+class DummyClass extends RMLocation
+{
+     //
+     protected $fillable = [
+        'google_place_id',
+        'searchable_name',
+        'display_name',
+        'street_number',
+        'street_name',
+        'neighborhood',
+        'city',
+        'state_code',
+        'county',
+        'borough',
+        'postal_code',
+        'lat',
+        'lng'
+     ];
+
+}

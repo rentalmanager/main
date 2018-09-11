@@ -1,0 +1,28 @@
+<?php
+namespace DummyNamespace;
+
+use RentalManager\Main\Models\RMUnit;
+
+class DummyClass extends RMUnit
+{
+     //
+     protected $fillable = [
+        'foreign_id',
+        'type',
+        'name',
+        'apt_unit_ste',
+        'total_units',
+        'available_units',
+        'beds',
+        'baths',
+        'sqft',
+        'security_deposit',
+        'price_min',
+        'price_max',
+        'pets_fee',
+        'pets',
+        'pets_info',
+        'tags',
+        'available_at'
+     ];
+}

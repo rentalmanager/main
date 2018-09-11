@@ -1,0 +1,48 @@
+{
+    "name": "rentalmanager/main",
+    "type": "library",
+    "description": "Rental Manager Main package which propels the basic system where you can manage properties for rent.",
+    "keywords": [
+        "Rentbits",
+        "Main"
+    ],
+    "homepage": "https://github.com/rentalmanager/main",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Rentbits",
+            "email": "support@rentbits.com",
+            "homepage": "https://rentbits.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "RentalManager\\Main\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RentalManager\\Main\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RentalManager\\Main\\MainServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    }
+}

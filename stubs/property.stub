@@ -1,0 +1,25 @@
+<?php
+namespace DummyNamespace;
+
+use RentalManager\Main\Models\RMProperty;
+
+class DummyClass extends RMProperty
+{
+     //
+     protected $fillable = [
+        'foreign_id',
+        'slug',
+        'is_community',
+        'name',
+        'lease_terms',
+        'description',
+        'tags',
+        'min_price',
+        'min_beds',
+        'min_baths',
+        'min_sqft',
+        'featured',
+        'status',
+        'status_reason'
+     ];
+}

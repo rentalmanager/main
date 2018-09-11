@@ -1,0 +1,18 @@
+<?php
+namespace DummyNamespace;
+
+use RentalManager\Main\Models\RMContact;
+
+class DummyClass extends RMContact
+{
+     //
+     protected $fillable = [
+        'owner',
+        'method',
+        'url',
+        'email_to',
+        'email_cc',
+        'phone'
+     ];
+
+}
